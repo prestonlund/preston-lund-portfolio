@@ -10,3 +10,13 @@ ul li {
     list-style-type: disc;
     margin-left: 22px;
 }
+
+li > a, 
+p > a {
+    font-weight: bold;
+}
+
+li > a:hover,
+p > a:hover {
+    text-decoration: underline;
+}

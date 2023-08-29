@@ -36,7 +36,47 @@ const project = {
             name: 'content',
             title: 'Content',
             type: 'array',
-            of: [{ type: 'block' }]
+            of: [
+                { 
+                    type: 'block',
+                    marks: {
+                        annotations: [
+                            {
+                                name: 'link',
+                                type: 'object',
+                                title: 'External Link',
+                                fields: [
+                                    {
+                                        name: 'href',
+                                        type: 'url',
+                                        title: 'URL'
+                                    },
+                                    {
+                                        title: 'Open in new tab',
+                                        name: 'blank',
+                                        type: 'boolean'
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'internalLink',
+                                type: 'object',
+                                title: 'Internal link',
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        title: 'Reference',
+                                        to: [
+                                            { type: 'project' }, { type: "page" }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }

@@ -19,4 +19,7 @@ p > a {
 li > a:hover,
 p > a:hover {
     text-decoration: underline;
+    .external-link-svg {
+        @apply translate-y-[-1px] translate-x-[1px];
+    }
 }

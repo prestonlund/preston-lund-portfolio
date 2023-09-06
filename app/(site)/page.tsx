@@ -10,7 +10,7 @@ export default async function Home() {
       <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">Preston</span>!
       </h1>
 
-      <p className="mt-3 text-xl text-gray-600">Hello everyone! Check out my work!</p>
+      <p className="mt-3 text-xl text-gray-600">Hello everyone! I&apos;m a Developer and Designer. Check out my work!</p>
 
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">My Projects</h2>
 

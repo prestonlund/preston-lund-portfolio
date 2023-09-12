@@ -39,6 +39,7 @@ export default async function RootLayout({
           </div>
         </header>
         <main className='py-20'>{children}</main>
+        <footer>Made by <span><Link className="hover:underline" href={`/about`}>Preston Lund</Link></span></footer>
       </body>
     </html>
   );

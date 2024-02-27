@@ -27,7 +27,7 @@ export default async function Home() {
               className="object-cover rounded-lg border border-gray-500"
             />
             )}
-            <div className="mt-2 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">{project.name}</div>
+            <div className="pl-2 mt-2 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">{project.name}</div>
           </Link>
         ))}
       </div>

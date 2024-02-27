@@ -2,12 +2,12 @@ import { getPages } from "@/sanity/sanity-utils";
 import "../globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Noto_Sans } from "next/font/google";
+import { Lato } from "next/font/google";
 
-const noto = Noto_Sans({
+const lato = Lato({
   weight: ['400', '900'],
   subsets: ['latin'],
-  variable: '--font-noto'
+  variable: '--font-lato'
 })
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default async function RootLayout({
       className="bg-white dark:bg-black text-black dark:text-white"
       lang="en"
     >
-      <body className={`${noto.variable} font-sans max-w-6xl mx-auto py-10 px-10 lg:px-0`}>
+      <body className={`${lato.variable} font-sans max-w-6xl mx-auto py-10 px-10 lg:px-0`}>
         <header className="flex items-center justify-between">
           <Link href='/' className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Preston Lund</Link>
 

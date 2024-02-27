@@ -19,7 +19,45 @@ p > a {
 li > a:hover,
 p > a:hover {
     text-decoration: underline;
-    .external-link-svg {
-        transform: translate(1px, -1px);
+}
+
+li > a:hover .external-link-svg,
+p > a:hover .external-link-svg {
+    transform: translate(1px, -1px);
+}
+
+.name-animation {
+    background: linear-gradient(
+        45deg,
+        #f3ac2e 0%,
+        #ff8c37 6.715%,
+        #ff6850 13.425%,
+        #ff3e70 20.14%,
+        #ff1295 26.855%,
+        #e617be 33.57%,
+        #aa3ce3 40.28%,
+        #0057ff 55.995%,
+        #aa3ce3 67.14%,
+        #e617be 73.855%,
+        #ff1295 80.56%,
+        #ff3e70 87.275%,
+        #ff6850 93.99%,
+        #ff8c37 96%,
+        #f3ac2e 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moveGradient 7.5s linear infinite;
+    @apply bg-fixed;                        
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: 0 0;
     }
 }

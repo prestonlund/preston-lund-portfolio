@@ -14,7 +14,7 @@ export default async function Project({ params }: Props) {
   return (
     <div>
       <header className="flex justify-between items-center">
-        <h1 className="py-1 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold">
+        <h1 className="pt-1 pb-2 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold">
           {project.name}
         </h1>
 
@@ -29,7 +29,7 @@ export default async function Project({ params }: Props) {
         </a>
       </header>
 
-      <Image src={project.image} alt={project.name} width={1920} height={1080} className="mt-10 border-2 border-gray-700 object-cover rounded-xl" />
+      <Image src={project.image} alt={project.name} width={1920} height={1080} className="mt-7 border-2 border-gray-700 object-cover rounded-xl" />
       
       <div className="text-lg text-gray-700 mt-5">
         <PortableText value={project.content} components={LinkTarget} />

@@ -1,17 +1,22 @@
 import { getProjects } from "@/sanity/sanity-utils";
 import Image from 'next/image';
 import Link from "next/link";
+import SplineRocket from "./components/SplineRocket";
+import LoadingSpinner from "./components/LoadingSpinner";
+import HeroSection from "./components/HeroSection";
+// import { useState } from "react";
 
 export default async function Home() {
   const projects = await getProjects();
+
+  // const [isSplineLoaded, setIsSplineLoaded] = useState(false);
+
+  // const handleSplineLoad = () => {
+  //   setIsSplineLoaded(true);
+  // };
   return (
     <div>
-      <h1 className="text-7xl font-extrabold">Hello, I&apos;m {" "}
-      {/* bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent */}
-      <span className="name-animation">Preston</span>!
-      </h1>
-
-      <p className="mt-3 text-xl text-gray-600">I&apos;m a Developer and Designer. Check out some of my work!</p>
+      <HeroSection />
 
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">My Projects</h2>
 

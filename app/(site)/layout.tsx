@@ -1,5 +1,6 @@
 import { getPages } from "@/sanity/sanity-utils";
 import "../globals.css";
+import '../styles/index.scss';
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Lato } from "next/font/google";
@@ -30,7 +31,7 @@ export default async function RootLayout({
     >
       <body className={`${lato.variable} font-sans max-w-6xl mx-auto py-10 px-10 lg:px-0`}>
         <header className="flex items-center justify-between">
-          <Link href='/' className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Preston Lund</Link>
+          <Link href='/' className="preston-header bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Preston Lund</Link>
 
           <div className="flex items-center gap-5 text-sm text-gray-600">
             {pages.map((page) => (
@@ -38,7 +39,7 @@ export default async function RootLayout({
             ))}
           </div>
         </header>
-        <main className='py-20'>{children}</main>
+        <main className=' pt-14 pb-20 sm:py-20'>{children}</main>
         <footer>Made by <span><Link className="hover:underline" href={`/about`}>Preston Lund</Link></span></footer>
       </body>
     </html>

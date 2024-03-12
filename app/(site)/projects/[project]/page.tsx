@@ -31,7 +31,7 @@ export default async function Project({ params }: Props) {
 
       <Image src={project.image} alt={project.name} width={1920} height={1080} className="mt-7 border-2 border-gray-700 object-cover rounded-xl" />
       
-      <div className="text-lg text-gray-700 mt-5">
+      <div className="text-lg text-gray-700 dark:text-white mt-5">
         <PortableText value={project.content} components={LinkTarget} />
       </div>
 

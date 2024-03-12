@@ -18,7 +18,7 @@ export default async function Home() {
     <div>
       <HeroSection />
 
-      <h2 className="mt-24 font-bold text-gray-700 text-3xl">My Projects</h2>
+      <h2 className="mt-24 font-bold text-gray-700 dark:text-white text-3xl">My Projects</h2>
 
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (

@@ -9,7 +9,7 @@ export default async function Home() {
       <HeroSection />
       <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
-            <ThreeDCard projectName={project.name} imageSrc={project.image} projectKey={project._id} projectHref={project.slug} />
+            <ThreeDCard projectName={project.name} imageSrc={project.image} key={project._id} projectHref={project.slug} />
         ))}
       </div>
     </div>

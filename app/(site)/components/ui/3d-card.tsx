@@ -1,4 +1,5 @@
 "use client";
+// eslint-disable-next-line react-hooks/exhaustive-deps
 
 import Image from "next/image";
 import React, {

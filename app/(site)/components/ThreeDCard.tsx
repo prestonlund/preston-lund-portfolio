@@ -8,7 +8,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 export function ThreeDCard(props: any) {
     const { imageSrc, projectKey, projectHref, projectName } = props;
   return (
-    <CardContainer className="inter-var">
+    <CardContainer key={projectKey} className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto lg:w-[30rem] h-auto rounded-xl p-6 border">
         <CardItem
           translateZ="50"
@@ -17,7 +17,7 @@ export function ThreeDCard(props: any) {
           {projectName}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <Link key={projectKey} className="" href={`/projects/${projectHref}`}>
+          <Link className="" href={`/projects/${projectHref}`}>
             <Image
               src={imageSrc}
               height="1000"
@@ -28,7 +28,7 @@ export function ThreeDCard(props: any) {
           </Link>
         </CardItem>
         <div className="flex justify-between items-center mt-10">
-          <Link key={projectKey} className="" href={`/projects/${projectHref}`}>
+          <Link className="" href={`/projects/${projectHref}`}>
             <CardItem
               translateZ={20}
               as="button"

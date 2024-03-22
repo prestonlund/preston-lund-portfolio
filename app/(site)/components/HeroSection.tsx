@@ -16,7 +16,7 @@ function HeroSection() {
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div className="hero-text pt-5 md:pt-0 px-8 md:pl-14 md:pr-2 text-center md:text-left">
-          <h1 className="text-7xl md:text-8xl text-white font-extrabold">Hey, I&apos;m {" "}
+          <h1 className="text-7xl md:text-8xl lg:text-9xl text-white font-extrabold">Hey, I&apos;m {" "}
           {/* bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent */}
           <span className="name-animation">Preston</span>!
           </h1>

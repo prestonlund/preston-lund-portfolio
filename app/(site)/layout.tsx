@@ -3,12 +3,12 @@ import "../globals.css";
 import '../styles/index.scss';
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Lato } from "next/font/google";
+import { Urbanist } from "next/font/google";
 
-const lato = Lato({
-  weight: ['400', '900'],
+const urbanist = Urbanist({
+  weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-lato'
+  variable: '--font-urbanist'
 })
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default async function RootLayout({
       className="bg-white dark:bg-black text-black dark:text-white"
       lang="en"
     >
-      <body className={`${lato.variable} font-sans max-w-6xl mx-auto py-10 px-10 lg:px-0`}>
+      <body className={`${urbanist.variable} font-sans max-w-6xl mx-auto py-10 px-10 lg:px-0`}>
         <header className="flex items-center justify-between">
           <Link href='/' className="preston-header bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Preston Lund</Link>
 

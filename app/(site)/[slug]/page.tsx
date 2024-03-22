@@ -25,7 +25,7 @@ export default async function Page({ params }: Props) {
                     </div>
                     <div className="md:w-1/3 pt-20 md:pt-0"> 
                         <Image 
-                            src="/../public/images/preston-profile-pic.jpg" 
+                            src="/images/preston-profile-pic.jpg" 
                             height={400}
                             width={400}
                             className=" rounded-3xl"

@@ -29,7 +29,7 @@ export default async function RootLayout({
       className="bg-white dark:bg-black text-black dark:text-white"
       lang="en"
     >
-      <body className={`${urbanist.variable} font-sans max-w-6xl mx-auto py-10 px-10 lg:px-0`}>
+      <body className={`${urbanist.variable} font-sans max-w-6xl mx-auto py-10 px-10 xl:px-0`}>
         <header className="flex items-center justify-between">
           <Link href='/' className="preston-header bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Preston Lund</Link>
 

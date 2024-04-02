@@ -2,6 +2,7 @@ import { getPage } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import LinkTarget from "../components/LinkTarget";
 import Image from "next/image";
+import Avatar from "../components/Avatar";
 
 type Props = {
     params: { slug: string };
@@ -24,14 +25,7 @@ export default async function Page({ params }: Props) {
                         <div className="text-lg text-gray-700 dark:text-white mt-10"><PortableText value={page.content} components={LinkTarget} /></div>
                     </div>
                     <div className="md:w-1/3 pt-20 md:pt-0"> 
-                        <Image 
-                            src="/images/preston-profile-pic.jpg" 
-                            height={400}
-                            width={400}
-                            className=" rounded-3xl"
-                            priority={true}
-                            alt="Preston Profile pic"
-                        />
+                        <Avatar />
                     </div>
                 </div>
             )}

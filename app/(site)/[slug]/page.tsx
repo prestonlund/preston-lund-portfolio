@@ -14,10 +14,10 @@ export default async function Page({ params }: Props) {
     return (
         <>
             {page.title !== 'About' ? (
-                <>
+                <div className="text-center">
                     <h1 className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-7xl drop-shadow font-extrabold">{page.title}</h1>
                     <div className="text-lg text-gray-700 dark:text-white mt-10"><PortableText value={page.content} components={LinkTarget} /></div>
-                </>
+                </div>
             ) : (
                 <div className="flex flex-col md:flex-row">
                     <div className="md:w-2/3 md:pr-20">

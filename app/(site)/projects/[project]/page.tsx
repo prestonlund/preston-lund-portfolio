@@ -13,7 +13,7 @@ export default async function Project({ params }: Props) {
   const project = await getProject(slug);
 
   return (
-    <div className="bg-gray-100 rounded-none sm:rounded-2xl -mx-10 md:mx-0">
+    <div className="bg-gray-100 dark:bg-gray-800 rounded-none sm:rounded-2xl -mx-10 md:mx-0">
       {/* <header className="flex justify-between items-center">
         <h1 className="pt-1 pb-2 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-4xl md:text-5xl drop-shadow font-extrabold">
           {project.name}

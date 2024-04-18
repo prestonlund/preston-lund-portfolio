@@ -26,6 +26,7 @@ export function HeroScroll(props: any) {
           width={1400}
           className="mx-auto rounded-2xl object-cover h-full object-center-top"
           draggable={false}
+          priority
         />
       </ContainerScroll>
         {/* <div className="absolute bottom-0 p-10">InMoment is a dynamic and innovative company that's all about elevating customer experiences. They specialize in creating solutions that help businesses understand, improve, and connect with their customers on a deeper level. InMoment's worldwide website, utilized by hundreds of editors in eight regions and four languages, is a mammoth filled with challenges, but I've been able to build, maintain and optimize it in so many ways!

@@ -28,7 +28,7 @@ const ProjectLink = ({ project, direction, isLoading }: ProjectLinkProps) => {
       <Link
         href={`/projects/${project.slug}`}
         onClick={() => handleLoading()}
-        className={`${direction === "prev" ? "flex-row" : "flex-row-reverse"} group relative flex items-center justify-between overflow-hidden rounded-xl bg-gray-100 no-underline transition-colors hover:bg-gray-200 py-2 `}>
+        className={`${direction === "prev" ? "flex-row" : "flex-row-reverse"} group relative flex items-center justify-between overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-300 no-underline transition-colors hover:bg-gray-200 py-2 px-2 dark:text-gray-800 `}>
 
         <div className={`${interanlLoading ? '' : "hidden"} absolute inset-0 flex items-center justify-center bg-gray-300 dark:bg-gray-800 opacity-75 z-10`}>
             <LoadingSpinner />
@@ -38,7 +38,7 @@ const ProjectLink = ({ project, direction, isLoading }: ProjectLinkProps) => {
             <span className="text-sm opacity-50">
               {direction === "prev" ? "Previous Project" : "Next Project"}
             </span>
-            <span className="text-lg">{project.name}</span>
+            <span className="text-md lg:text-lg">{project.name}</span>
           </div>
         </div>
         <div className="justify-self-end text-[4rem]">

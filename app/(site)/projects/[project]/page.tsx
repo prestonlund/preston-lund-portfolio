@@ -63,7 +63,7 @@ export default async function Project({ params }: Props) {
         </div>
       </div>
 
-      <div className=" pt-16 grid gap-4 md:grid-cols-2 lg:gap-64 xl:gap-80">
+      <div className=" pt-16 grid gap-4 md:grid-cols-2 lg:gap-60 xl:gap-80 ">
         {prevProject ? <ProjectLink project={prevProject} direction="prev" isLoading={false} /> : <div> </div>}
         {nextProject && <ProjectLink project={nextProject} direction="next" isLoading={false} />}
       </div>

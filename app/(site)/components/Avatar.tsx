@@ -60,7 +60,7 @@ function Avatar() {
         <div className='avatar rounded-3xl overflow-hidden border-2 border-slate-500 opacity-0'>
             <Image 
                 src="/images/preston-profile-pic.jpg" 
-                height={400}
+                height={447}
                 width={400}
                 className="avatar-image h-full w-full object-fill"
                 priority={true}
